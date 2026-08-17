@@ -1,12 +1,12 @@
 # Face Off!
 
-**Multiplayer Family Feud-style party game for Android** — real friends, live buzzer races, persistent wallets, and production-ready monetization (AdMob + Google Play Billing).
+**Multiplayer Family Feud-style party game for Android**  real friends, live buzzer races, persistent wallets, and production-ready monetization (AdMob + Google Play Billing).
 
 This is the cleaned, production-oriented version of the Face Off codebase (v2.0).
 
 ## Features that make money
 
-- **AdMob** — Banner + Interstitial + Rewarded ads (server-side verification / SSV so clients cannot fake rewards)
+- **AdMob**  Banner + Interstitial + Rewarded ads (server-side verification / SSV so clients cannot fake rewards)
 - **In-app purchases** — `remove_ads` and `question_pack_1` (verified server-side against Google Play)
 - **Persistent coin wallets** + secure wager settlement (authoritative backend)
 - Private rooms + public matchmaking, host migration, reconnection
@@ -90,6 +90,6 @@ Debug builds fall back to Google’s test ad IDs.
 
 ## License / notes
 
-Questions bank is intentionally left as-is (not replaced with a regional set). Brand assets are placeholders — replace launcher icon and feature graphic before store submission.
+Questions bank is intentionally left as-is (not replaced with a regional set). Brand assets are placeholders  replace launcher icon and feature graphic before store submission.
 
 See `BRAND_AND_PRODUCT_VISION.md` and `PRODUCTION_CHECKLIST.md` for the full product vision and launch checklist.
