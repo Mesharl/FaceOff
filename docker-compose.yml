@@ -1,0 +1,31 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: faceoff
+      POSTGRES_PASSWORD: faceoff
+      POSTGRES_DB: faceoff
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+  backend:
+    build: ./backend
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: development
+      DATABASE_URL: postgresql://faceoff:faceoff@postgres:5432/faceoff
+      REDIS_URL: redis://redis:6379
+      JWT_SECRET: local-dev-secret-change-me
+      ALLOW_UNVERIFIED_PURCHASES: "true"
+    depends_on:
+      - postgres
+      - redis
+volumes:
+  pgdata:
