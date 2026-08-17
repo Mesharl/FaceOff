@@ -1,0 +1,51 @@
+# Android
+*.iml
+.gradle/
+local.properties
+.idea/
+*.apk
+*.aab
+*.ap_
+*.dex
+bin/
+gen/
+out/
+.externalNativeBuild/
+.cxx/
+captures/
+.DS_Store
+*.log
+build/
+.navigation/
+*.jks
+*.keystore
+google-services.json
+*.hprof
+
+# Backend / Node
+node_modules/
+.env
+.env.local
+.env.production
+*.log
+npm-debug.log*
+.DS_Store
+coverage/
+.nyc_output/
+dist/
+tmp/
+*.tmp
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*~
+Thumbs.db
+
+# Secrets (never commit)
+**/service-account*.json
+**/google-play*.json
+secrets/
+*.pem
+*.p12
